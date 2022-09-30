@@ -1,33 +1,28 @@
-// Saber si existe una secuencia de caracteres dentro de un String...
+// if (palabra.indexOf("per") > -1){
+//   console.log("Sí, la palabra contiene ese string");
+// } else{
+//   console.log("No, no lo lleva");
+// };
+// Saber si existe una secuencia de caracteres dentro de un String...y devolver si lo contiene o no.
 let palabra = "manzanasyperas";
 console.log(palabra);
-let substring = "zanas";
 
-function inString(){
-  if (palabra.indexOf("peras") > -1){
+function comprobar(palabra){
+
+  if (palabra.indexOf("per") > -1){
     console.log("Sí, la palabra contiene ese string");
   } else{
-    return false;
-  }
-}
+    console.log("No, no lo lleva");
+  };
+};
 
-console.log(inString());
-// function inString (palabra){
-//   if (palabra.indexOf('zanas') > -1){
-//     console.log("zanas está dentro del string");
-//   }else{
-//   return false;
-// }};
-
-// console.log(inString());
+console.log(comprobar());
 
 
 
 
-// function inString(text) {
-//   arrayText = text.split(" , ")
-//     // if(text != text.includes("abbs")){
-//     //   return false;
-//     // }
-    
-// }
+
+
+
+
+
