@@ -4,7 +4,7 @@
 let a1 = [ 3, 1, 2, 8, 13, 9, 1, 1, 2, 3, 4, 10, 12, 11, 1, 1];
 let a2 = [ 5, 7, 7, 7, 7, 2, 1, 2, 0];
 
-let resultado = 0;
+//let resultado = 0;
 
 // Escribe tu algoritmo - guarda en resultado.
 
@@ -26,20 +26,18 @@ console.log(`El nuevo array ordenado es ${a3ordenado}`);
 console.log(`El número mayor del a3 está en el índice ${a3ordenado.length}`);
 console.log(`El siguiente número mayor está en el índice  ${a3ordenado.length-1}`);
 
-function multiplicarLosNumerosMayores (){
+let resultado = function () {
   let multiplicar = 1;
   for (let i = 0; i < a3ordenado.length; i++) {
     const element1 = a3ordenado[i];
     const element2 = a3ordenado[i-1];
 
     multiplicar = element1*element2;    
-  }
+  };
   return multiplicar;
 }
-console.log(`El resultado de la multiplicación de los dos números mayores del a3 es ${multiplicarLosNumerosMayores()}`);
-//Redefino la variable resultado, ya que no la puedo borrar:
-// let resultado1 = elem1*elem2;
-// resultado = resultado + resultado1;
+console.log(`El resultado de la multiplicación de los dos números mayores del a3 es ${resultado()}`);
+
 
 
 
